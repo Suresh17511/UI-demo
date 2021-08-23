@@ -1,0 +1,52 @@
+@import "./css/mixins";
+.App {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  .leftContainer {
+    position: sticky;
+    left: 0;
+    top: 0;
+    margin: 0px;
+    width: 5%;
+    height: 100vh;
+    @include mQ(600px) {
+      width: 10%;
+    }
+  }
+  .rightContainer {
+    margin: 0px;
+    width: 95%;
+    background-color: rgb(228, 224, 218);
+    @include mQ(600px) {
+      width: 90%;
+    }
+    .topBar {
+      width: 100%;
+      position: sticky;
+      top: 0px;
+      background-color: #fff;
+      z-index: 1000;
+    }
+    .bodyContainer {
+      padding: 15px;
+      background-color: rgb(228, 224, 218);
+      border-radius: 15px;
+      .topBoxContainer {
+        width: 100%;
+        border-radius: 15px;
+      }
+      .middleBoxContainer {
+        width: 100%;
+        border-radius: 15px;
+      }
+      .bottomBoxContainer {
+        width: 100%;
+        border-radius: 15px;
+        @include mQ(600px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

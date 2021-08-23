@@ -1,0 +1,75 @@
+@import "../css/mixins";
+.topBox {
+  padding: 0px 15px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mQ(600px) {
+    padding: 0px;
+  }
+  .searchContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      position: absolute;
+      left: 4px;
+    }
+    input {
+      padding: 4px;
+      padding-left: 25px;
+      border: 1px solid rgb(70, 68, 68);
+      border-radius: 5px;
+    }
+  }
+  .profileContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .alert {
+      position: relative;
+      background-color: rgb(226, 226, 226);
+      padding: 5px 6px;
+      border-radius: 5px;
+      margin-right: 5px;
+      i {
+        color: rgb(124, 119, 119);
+      }
+      .dot {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        background-color: rgb(194, 34, 66);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+      }
+    }
+    .userProfile {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5px;
+      .leftItem {
+        height: 25px;
+        img {
+          height: 100%;
+        }
+      }
+      .rightItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        b {
+          font-size: 10px;
+        }
+        span {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

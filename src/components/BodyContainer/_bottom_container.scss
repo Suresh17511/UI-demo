@@ -1,0 +1,46 @@
+.bottom__container {
+  background-color: #fff;
+  padding: 10px;
+
+  .table_container {
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    .header {
+      display: flex;
+      padding: 10px;
+      font-size: medium;
+    }
+    .table__container {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        tr {
+          th {
+            padding: 2px 0px;
+          }
+          td {
+            padding: 2px 0px;
+            text-align: center;
+          }
+          .color {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: rgb(18, 146, 18);
+            margin-right: 2px;
+          }
+          .toggle {
+            width: 10px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

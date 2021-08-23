@@ -1,0 +1,105 @@
+@import "../../css/mixins";
+.middle__container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  @include mQ(600px) {
+    flex-direction: column;
+  }
+  .left__container {
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    @include mQ(600px) {
+      width: 100%;
+    }
+    .header {
+      display: flex;
+      padding: 10px;
+      font-size: medium;
+    }
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px;
+      .block {
+        width: 45%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 5px 0px;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        @include mQ(600px) {
+          width: 100%;
+        }
+        .left_side {
+          padding: 5px;
+          img {
+            height: 65px;
+            border-radius: 5px;
+          }
+        }
+        .right_side {
+          width: 75%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .right__container {
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    @include mQ(600px) {
+      width: 100%;
+    }
+    .top_header {
+      display: flex;
+      padding: 10px;
+      font-size: medium;
+    }
+    .body_container {
+      display: flex;
+      padding: 10px;
+      flex-wrap: wrap;
+      .left,
+      .right {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        @include mQ(600px) {
+          width: 100%;
+        }
+        .header {
+          display: flex;
+          padding: 10px;
+          font-size: medium;
+        }
+        .contents {
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          border-radius: 15px;
+          margin: 5px 0px;
+        }
+      }
+      .middle {
+        width: 33.3%;
+        @include mQ(600px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
