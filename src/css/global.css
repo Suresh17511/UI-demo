@@ -530,6 +530,10 @@
   padding: 10px;
 }
 
+.middle__container .left__container .contents progress {
+  width: 90%;
+}
+
 .middle__container .left__container .contents .block {
   width: 45%;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

@@ -26,6 +26,9 @@
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 10px;
+      progress {
+        width: 90%;
+      }
       .block {
         width: 45%;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
