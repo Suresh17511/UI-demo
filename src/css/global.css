@@ -653,6 +653,11 @@
   margin: 5px 0px;
 }
 
+.middle__container .right__container .body_container .left .contents progress,
+.middle__container .right__container .body_container .right .contents progress {
+  width: 90%;
+}
+
 .middle__container .right__container .body_container .middle {
   width: 33.3%;
 }
