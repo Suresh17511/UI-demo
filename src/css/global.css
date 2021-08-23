@@ -348,6 +348,7 @@
 @media screen and (max-width: 600px) {
   .bodyTopOne .bottom_container .block {
     width: 100%;
+    margin-bottom: 10px;
   }
 }
 
